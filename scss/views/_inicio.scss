@@ -1,0 +1,42 @@
+.contenedorInicio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "main main main"
+        "footer footer footer";
+    width: auto;
+
+    .main {
+        grid-area: main;
+        padding: 1rem;
+
+        .acaInicio {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+
+            .nosotrosInicio {
+                padding: 0 1rem;
+                width: 40%;
+
+                h3 {
+                    margin-bottom: .5rem;
+                    font-weight: bold;
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 1.8rem;
+                }
+
+                p {
+                    text-align: justify;
+                    font-weight: 400;
+                    font-family: 'Maven Pro', sans-serif;
+                    margin: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
