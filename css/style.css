@@ -10,6 +10,30 @@
   margin: 0;
   border: 0; }
 
+/* Variables */
+.productosPortada, .medidaPortada, .portadaGaleria, .conocenosPortada {
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 15rem 0; }
+  .productosPortada p, .medidaPortada p, .portadaGaleria p, .conocenosPortada p {
+    color: #BEA88E;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0; }
+  .productosPortada h2, .medidaPortada h2, .portadaGaleria h2, .conocenosPortada h2 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    margin: 0; }
+  .productosPortada p, .medidaPortada p, .portadaGaleria p, .conocenosPortada p, .productosPortada h2, .medidaPortada h2, .portadaGaleria h2, .conocenosPortada h2 {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px 8px black; }
+
 /* Header */
 .header {
   grid-area: header;
@@ -32,7 +56,7 @@
       width: 12.5rem;
       padding-top: 6rem; }
 
-/* Bootstrap navbar */
+/* Navbar */
 .navbar {
   background-color: #151D1B !important; }
   .navbar .navbar-collapse {
@@ -139,46 +163,9 @@
           margin: 0;
           font-size: 1rem; }
 
-/* MAIN PRODUCTOS */
+/* Productos */
 .productosPortada {
-  background-image: url(../img/pine-wood-low.jpg);
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  padding: 15rem 0; }
-
-.productosPortada p,
-.medidaPortada p,
-.portadaGaleria p,
-.conocenosPortada p {
-  color: #BEA88E;
-  font-size: 1rem;
-  font-family: 'Raleway', sans-serif;
-  margin: 0; }
-
-.productosPortada h2,
-.medidaPortada h2,
-.portadaGaleria h2,
-.conocenosPortada h2 {
-  color: white;
-  font-size: 4rem;
-  font-family: 'Raleway', sans-serif;
-  margin: 0; }
-
-.productosPortada p,
-.productosPortada h2,
-.medidaPortada p,
-.medidaPortada h2,
-.portadaGaleria p,
-.portadaGaleria h2,
-.conocenosPortada p,
-.conocenosPortada h2 {
-  font-weight: bold;
-  text-align: center;
-  text-shadow: 1px 2px 8px black; }
+  background-image: url(../img/pine-wood-low.jpg); }
 
 .productos {
   display: grid;
@@ -187,68 +174,45 @@
   gap: 1rem;
   padding: 3rem 0;
   justify-items: center; }
-
-.producto {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.producto img,
-.producto h3,
-.producto p {
-  margin-bottom: .5rem; }
-
-.producto img {
-  border-radius: 1rem; }
-
-.producto h3,
-.producto p {
-  text-align: left;
-  width: 100%; }
-
-.producto h3 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600; }
-
-.producto p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  font-size: 1rem; }
-
-.comprar {
-  padding: .5rem;
-  border-radius: 1rem;
-  font-weight: 700;
-  font-size: 1rem;
-  background-color: #151D1B;
-  color: white;
-  cursor: pointer; }
-
-.comprar:hover {
-  background-color: #BEA88E; }
+  .productos .producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .productos .producto img,
+    .productos .producto h3,
+    .productos .producto p {
+      margin-bottom: .5rem; }
+    .productos .producto img {
+      border-radius: 1rem; }
+    .productos .producto h3,
+    .productos .producto p {
+      text-align: left;
+      width: 100%; }
+    .productos .producto h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600; }
+    .productos .producto p {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: bold;
+      font-size: 1rem; }
+    .productos .producto .comprar {
+      padding: .5rem;
+      border-radius: 1rem;
+      font-weight: 700;
+      font-size: 1rem;
+      background-color: #151D1B;
+      color: white;
+      cursor: pointer; }
+      .productos .producto .comprar:hover {
+        background-color: #BEA88E; }
 
 .medidaPortada {
-  background-image: url(../img/measuring.jpg);
-  background-size: cover;
-  height: 100%;
-  padding: 15rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-image: url(../img/measuring.jpg); }
 
-/* GALERIA */
+/* Galeria */
 .portadaGaleria {
-  background-image: url(../img/portada-galeria.jpg);
-  background-size: cover;
-  background-position: 15%;
-  height: 100%;
-  padding: 15rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-image: url(../img/portada-galeria.jpg); }
 
 .galeria {
   display: grid;
@@ -346,17 +310,9 @@
   border-radius: 0px;
   border: 0px solid #fff; }
 
-/* ACERCA DE */
+/* Nosotros */
 .conocenosPortada {
-  background-image: url(../img/SN_CIUDAD_blow.jpg);
-  background-size: cover;
-  background-position: 15%;
-  height: 100%;
-  padding: 15rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  background-image: url(../img/SN_CIUDAD_blow.jpg); }
 
 .conocenos {
   display: flex;
@@ -401,7 +357,6 @@
   right: 5%;
   width: 90%;
   height: 1px;
-  /* background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent); */
   background-image: linear-gradient(to right, transparent, #a1a7a6, transparent); }
 
 .historia {
@@ -455,7 +410,7 @@
   background-position: 90%;
   background-size: cover; }
 
-/* CONTACTO */
+/* Contacto */
 .contenedorGeneral {
   display: grid;
   grid-template-columns: 1fr 1fr;
