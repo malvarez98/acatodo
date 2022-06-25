@@ -2,55 +2,79 @@
     background-image: url(../img/pine-wood-low.jpg);
     @extend %banner;
 }
+
 .medidaPortada {
     background-image: url(../img/measuring.jpg);
     @extend %banner;
 }
+
 .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 1rem;
+    row-gap: 1rem;
     padding: 3rem 0;
     justify-items: center;
 
     .producto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        img,
-        h3,
-        p {
-            margin-bottom: .5rem;
-        }
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
+        // gap: .5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 5px;
+        height: 32rem;
+        width: 20rem;
+        font-family: 'Open Sans', sans-serif;
 
         img {
-            border-radius: 1rem;
-        }
-
-        h3,
-        p {
-            text-align: left;
             width: 100%;
         }
 
-        h3 {
-            font-family: 'Raleway', sans-serif;
-            font-size: 1.2rem;
-            font-weight: 600;
+        .productoCard {
+            padding: 5px 10px;
+
+            .drow {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: .4rem;
+            }
+
+            p {
+                color: #3d3d3d;
+                margin-bottom: 1.7rem;
+                font-size: 14px;
+                padding: 0 1rem;
+            }
+
+            h4,
+            h3 {
+                font-weight: bold;
+                color: black;
+                margin: 1.5rem 0;
+            }
+
+            h4 {
+                font-size: 1.17rem;
+            }
+
+            h3 {
+                font-size: 1rem;
+            }
+            .productoBotones{
+                display: flex;
+                justify-content: space-around;
+                margin-bottom: 1rem;
+            }
         }
 
-        p {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            font-size: 1rem;
-        }
     }
 }
-.comprar {
+
+.botones {
     padding: .5rem;
-    border-radius: 1rem;
+    border-radius: 5px;
     font-weight: 700;
     font-size: 1rem;
     background-color: #151D1B;
@@ -59,5 +83,9 @@
 
     &:hover {
         background-color: #BEA88E;
+        transition: .5s;
     }
+}
+.comprar{
+    background-color: #28a745;  
 }
