@@ -167,6 +167,9 @@
 .productosPortada {
   background-image: url(../img/pine-wood-low.jpg); }
 
+.medidaPortada {
+  background-image: url(../img/measuring.jpg); }
+
 .productos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -196,19 +199,17 @@
       font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       font-size: 1rem; }
-    .productos .producto .comprar {
-      padding: .5rem;
-      border-radius: 1rem;
-      font-weight: 700;
-      font-size: 1rem;
-      background-color: #151D1B;
-      color: white;
-      cursor: pointer; }
-      .productos .producto .comprar:hover {
-        background-color: #BEA88E; }
 
-.medidaPortada {
-  background-image: url(../img/measuring.jpg); }
+.comprar {
+  padding: .5rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  background-color: #151D1B;
+  color: white;
+  cursor: pointer; }
+  .comprar:hover {
+    background-color: #BEA88E; }
 
 /* Galeria */
 .portadaGaleria {

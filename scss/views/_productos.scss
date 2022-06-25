@@ -2,7 +2,10 @@
     background-image: url(../img/pine-wood-low.jpg);
     @extend %banner;
 }
-
+.medidaPortada {
+    background-image: url(../img/measuring.jpg);
+    @extend %banner;
+}
 .productos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -43,24 +46,18 @@
             font-weight: bold;
             font-size: 1rem;
         }
-
-        .comprar {
-            padding: .5rem;
-            border-radius: 1rem;
-            font-weight: 700;
-            font-size: 1rem;
-            background-color: #151D1B;
-            color: white;
-            cursor: pointer;
-
-            &:hover {
-                background-color: #BEA88E;
-            }
-        }
     }
 }
+.comprar {
+    padding: .5rem;
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: #151D1B;
+    color: white;
+    cursor: pointer;
 
-.medidaPortada {
-    background-image: url(../img/measuring.jpg);
-    @extend %banner;
+    &:hover {
+        background-color: #BEA88E;
+    }
 }
