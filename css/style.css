@@ -175,9 +175,10 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  row-gap: 1rem;
-  padding: 3rem 0;
-  justify-items: center; }
+  row-gap: 2rem;
+  justify-items: center;
+  width: 60vw;
+  margin: 2rem auto; }
   .productos .producto {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 5px;
@@ -496,6 +497,10 @@ form textarea:focus {
   width: 100%; }
 
 /* Responsive - Media query */
+@media (max-width: 1660px) {
+  .productos {
+    width: 80vw; } }
+
 @media (max-width: 1361px) {
   /* Inicio */
   .acaInicio {
@@ -513,8 +518,8 @@ form textarea:focus {
   /* Productos */
   .productos {
     grid-template-columns: 1fr 1fr;
-    padding: 2rem 0;
-    gap: 1rem; }
+    width: 90vw;
+    row-gap: 1rem; }
   .productosPortada,
   .medidaPortada,
   .portadaGaleria,
@@ -537,7 +542,8 @@ form textarea:focus {
 @media (max-width: 1070px) {
   .conocenos {
     flex-direction: column-reverse; }
-  .conocenos section, .conocenos img {
+  .conocenos section,
+  .conocenos img {
     width: 80%; } }
 
 @media (max-width: 1050px) {
@@ -580,7 +586,7 @@ form textarea:focus {
   /* Productos */
   .productos {
     grid-template-columns: 1fr;
-    padding: 2rem 0;
+    width: 100vw;
     gap: 1rem; }
   /* Acerca de */
   .historia {
@@ -639,7 +645,8 @@ form textarea:focus {
   .conocenosPortada h2 {
     font-size: 3rem; }
   /* Acerca de */
-  .conocenos section, .conocenos img {
+  .conocenos section,
+  .conocenos img {
     width: 95%; }
   .historia {
     grid-template-columns: 1fr; } }
