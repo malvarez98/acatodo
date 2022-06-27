@@ -16,13 +16,16 @@
                 align-items: center;
                 width: 70vw;
                 margin: 1rem auto;
+
                 .nosotrosInicio {
                     width: 100%;
                     padding: 0;
-                    p{
+
+                    p {
                         margin-bottom: 1rem;
                     }
                 }
+
                 .imagenPrincipal {
                     width: 100%;
                 }
@@ -33,6 +36,20 @@
 }
 
 @media (max-width: 1240px) {
+
+    /* Footer */
+    .footer {
+        .contenedorFooter {
+            padding-top: 1rem;
+            grid-template-columns: 30% 20% 20% 20%;
+
+            .seccionLinks,
+            .seccionContacto,
+            .seccionRedes {
+                height: 60%;
+            }
+        }
+    }
 
     /* Productos */
     .productos {
@@ -56,7 +73,55 @@
 
     /* galeria */
     .galeria {
-        padding: 1rem;
+        width: 80vw;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        .imagen4 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .imagen5 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .imagen6 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+        }
+        .imagen7 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 8;
+            grid-row-end: 9;
+        }
+        .imagen8 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+            grid-row-end: 8;
+        }
+        .imagen9 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 7;
+        }
+        .imagen10{
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 7;
+            grid-row-end: 9;
+        }
+        .imagen11,.imagen12{
+            display: none;
+        }
+        
     }
 
 }
@@ -78,15 +143,32 @@
     .header {
         background-position: 50%;
     }
+
     /* Footer */
     .footer {
         .contenedorFooter {
-            grid-template-columns: 30% 30%;
-        }
-        .seccionLinks{
-            align-self: center;
+            padding-top: 1rem;
+            grid-template-columns: 40% 40%;
+            justify-items: start;
+
+            .seccionLinks,
+            .seccionContacto,
+            .seccionRedes {
+                height: 100%;
+            }
+
+            .seccionLogo,
+            .seccionRedes {
+                justify-self: center;
+            }
+
+            .seccionLogo {
+                height: 50%;
+                width: 75%;
+            }
         }
     }
+
     /* Inicio */
     .contenedorInicio {
         .main {
@@ -115,16 +197,11 @@
 
 @media (max-width: 780px) {
 
-    /* Productos */
-    .productos {
-        grid-template-columns: 1fr;
-        width: 100vw;
-        gap: 1rem;
-    }
-
-    /* Nosotros */
-    .historia {
-        grid-template-columns: 1fr 1fr;
+    /* Footer */
+    .footer {
+        .contenedorFooter {
+            grid-template-columns: 1fr 1fr;
+        }
     }
     /* Inicio */
     .contenedorInicio {
@@ -134,12 +211,24 @@
             }
         }
     }
-}
+    /* Productos */
+    .productos {
+        grid-template-columns: 1fr;
+        width: 100vw;
+        gap: 1rem;
+    }
+    /* Galeria */
+    .galeria{
+        width: 90vw;
+        margin: 1rem auto;
+        gap: 1rem;
+    }
+    /* Nosotros */
+    .historia {
+        grid-template-columns: 1fr 1fr;
+    }
 
-@media (max-width: 700px) {
-
-    /* Footer */
-
+    
 }
 
 @media (max-width: 600px) {
@@ -150,8 +239,29 @@
     }
 
     /* Footer */
+    .footer {
+        .contenedorFooter {
+            .seccionLogo {
+                width: 80%;
 
-    
+                .logoFooter {
+                    width: 150px;
+                }
+            }
+
+            .seccionContacto,
+            .seccionLinks,
+            .seccionRedes {
+                h4 {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    /* Galeria */
+    .galeria{
+        gap: .5rem;
+    }
     /* Contacto */
     .contenedorGeneral {
         padding: 1rem 0;

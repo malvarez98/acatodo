@@ -36,7 +36,7 @@
     text-shadow: 1px 2px 8px black; }
 
 .footer .contenedorFooter .seccionLinks, .footer .contenedorFooter .seccionRedes, .footer .contenedorFooter .seccionContacto {
-  height: 30%; }
+  height: 50%; }
   .footer .contenedorFooter .seccionLinks h4, .footer .contenedorFooter .seccionRedes h4, .footer .contenedorFooter .seccionContacto h4 {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
@@ -268,7 +268,7 @@
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr);
   gap: 1.5rem;
-  width: 60vw;
+  width: 70vw;
   margin: 2rem auto; }
   .galeria .imagenGaleria {
     width: 100%;
@@ -521,6 +521,14 @@ form textarea:focus {
       width: 100%; } }
 
 @media (max-width: 1240px) {
+  /* Footer */
+  .footer .contenedorFooter {
+    padding-top: 1rem;
+    grid-template-columns: 30% 20% 20% 20%; }
+    .footer .contenedorFooter .seccionLinks,
+    .footer .contenedorFooter .seccionContacto,
+    .footer .contenedorFooter .seccionRedes {
+      height: 60%; }
   /* Productos */
   .productos {
     grid-template-columns: 1fr 1fr;
@@ -535,7 +543,46 @@ form textarea:focus {
       font-size: 3.5rem; }
   /* galeria */
   .galeria {
-    padding: 1rem; } }
+    width: 80vw;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr); }
+    .galeria .imagen4 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 5; }
+    .galeria .imagen5 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .galeria .imagen6 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 4;
+      grid-row-end: 5; }
+    .galeria .imagen7 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 8;
+      grid-row-end: 9; }
+    .galeria .imagen8 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 8; }
+    .galeria .imagen9 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 5;
+      grid-row-end: 7; }
+    .galeria .imagen10 {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 7;
+      grid-row-end: 9; }
+    .galeria .imagen11, .galeria .imagen12 {
+      display: none; } }
 
 @media (max-width: 1070px) {
   .conocenos {
@@ -550,9 +597,19 @@ form textarea:focus {
     background-position: 50%; }
   /* Footer */
   .footer .contenedorFooter {
-    grid-template-columns: 30% 30%; }
-  .footer .seccionLinks {
-    align-self: center; }
+    padding-top: 1rem;
+    grid-template-columns: 40% 40%;
+    justify-items: start; }
+    .footer .contenedorFooter .seccionLinks,
+    .footer .contenedorFooter .seccionContacto,
+    .footer .contenedorFooter .seccionRedes {
+      height: 100%; }
+    .footer .contenedorFooter .seccionLogo,
+    .footer .contenedorFooter .seccionRedes {
+      justify-self: center; }
+    .footer .contenedorFooter .seccionLogo {
+      height: 50%;
+      width: 75%; }
   /* Inicio */
   .contenedorInicio .main .acaInicio {
     width: 80vw; }
@@ -568,26 +625,42 @@ form textarea:focus {
       width: 100%; } }
 
 @media (max-width: 780px) {
+  /* Footer */
+  .footer .contenedorFooter {
+    grid-template-columns: 1fr 1fr; }
+  /* Inicio */
+  .contenedorInicio .main .acaInicio {
+    width: 90vw; }
   /* Productos */
   .productos {
     grid-template-columns: 1fr;
     width: 100vw;
     gap: 1rem; }
+  /* Galeria */
+  .galeria {
+    width: 90vw;
+    margin: 1rem auto;
+    gap: 1rem; }
   /* Nosotros */
   .historia {
-    grid-template-columns: 1fr 1fr; }
-  /* Inicio */
-  .contenedorInicio .main .acaInicio {
-    width: 90vw; } }
-
-@media (max-width: 700px) {
-  /* Footer */ }
+    grid-template-columns: 1fr 1fr; } }
 
 @media (max-width: 600px) {
   /* Header */
   .header {
     background-position: 50%; }
   /* Footer */
+  .footer .contenedorFooter .seccionLogo {
+    width: 80%; }
+    .footer .contenedorFooter .seccionLogo .logoFooter {
+      width: 150px; }
+  .footer .contenedorFooter .seccionContacto h4,
+  .footer .contenedorFooter .seccionLinks h4,
+  .footer .contenedorFooter .seccionRedes h4 {
+    font-size: 1.2rem; }
+  /* Galeria */
+  .galeria {
+    gap: .5rem; }
   /* Contacto */
   .contenedorGeneral {
     padding: 1rem 0; }
