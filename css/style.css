@@ -140,6 +140,11 @@
         opacity: 1;
         transform: translateY(0px); }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
 /* Footer */
 .footer {
   grid-area: footer; }
