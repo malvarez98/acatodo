@@ -1,0 +1,9 @@
+Notas de SEO proyecto ACA TODO
+
+-En todas las paginas html modifique la etiqueta title para describir brevemente el contenido principal de la pagina y mostrar el nombre de la empresa.
+
+-En todas las paginas html hice uso de la etiqueta meta con el atributo keywords aplicando palabras claves relacionadas con el contenido del sitio.
+
+-En cada una de las paginas html hice uso de la etiqueta meta con el atributo description. Describi brevemente en un espacio maximo de 155 caracteres el contenido de cada una de las paginas.
+
+-Incorpore el archivo sitemap.xml al proyecto. El mismo indica la prioridad de las paginas dentro de mi sitio web. 
