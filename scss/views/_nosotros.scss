@@ -42,23 +42,41 @@
     }
 }
 
+// .divisor {
+//     position: relative;
+//     margin: 4rem 0;
+//     height: 1px;
+// }
+
+// .div-transparente {
+//     &:before {
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 5%;
+//         right: 5%;
+//         width: 90%;
+//         height: 1px;
+//         background-image: linear-gradient(to right, transparent, #a1a7a6, transparent);
+//     }
+// }
 .divisor {
+    height: 20px;
     position: relative;
+    width: 100%;
     margin: 4rem 0;
-    height: 1px;
+    background: radial-gradient(ellipse farthest-side at top center, rgba(0, 0, 0, 0.08), transparent);
 }
 
 .div-transparente {
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 5%;
-        right: 5%;
-        width: 90%;
-        height: 1px;
-        background-image: linear-gradient(to right, transparent, #a1a7a6, transparent);
-    }
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02), transparent);
 }
 
 .historia {
