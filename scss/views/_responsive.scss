@@ -228,6 +228,9 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    /* Contacto */
+
+
 
 }
 
@@ -255,6 +258,9 @@
     /* Contacto */
     .contenedorGeneral {
         padding: 1rem 0;
+        .contacto{
+            flex-direction: column;
+        }
     }
 
     /* Banners */
