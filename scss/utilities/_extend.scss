@@ -31,12 +31,16 @@
 }
 // Footer links list
 %footerList{
-    height: 50%;
+    // height: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     h4 {
         font-family: 'Raleway', sans-serif;
         font-size: 1.5rem;
         font-weight: bold;
         color: #F9FAFA;
+        margin: 0;
     }
     ul {
         margin: 0;
