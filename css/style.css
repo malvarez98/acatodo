@@ -220,10 +220,10 @@
 
 /* Productos */
 .productosPortada {
-  background-image: url(../../img/portada-productos.jpg); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-productos_ekcvq4.jpg"); }
 
 .medidaPortada {
-  background-image: url(../../img/portada-medida.jpg); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-medida_rlycko.jpg"); }
 
 .productos {
   display: grid;
@@ -269,7 +269,7 @@
 
 /* Galeria */
 .portadaGaleria {
-  background-image: url(../../img/portada-galeria.jpg); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656863078/portada-galeria_bco5dk.jpg"); }
 
 .galeria {
   display: grid;
@@ -355,7 +355,7 @@
 
 /* Nosotros */
 .nosotrosPortada {
-  background-image: url(../../img/portada-nosotros.jpg); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-nosotros_vyvo2j.jpg"); }
 
 .conocenos {
   display: flex;
