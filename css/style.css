@@ -95,7 +95,7 @@
 /* Header */
 .header {
   grid-area: header;
-  background-image: url(../../img/fondo-header.png);
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862702/fondo-header_jaazuf.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%; }
