@@ -13,13 +13,12 @@
 
 /* Variables */
 .banner {
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 15rem 0; }
+  padding: 11rem 0; }
   .banner p {
     color: #BEA88E;
     font-size: 1rem;
@@ -87,10 +86,16 @@
 .comprar {
   background-color: #28a745; }
 
+.carousel {
+  margin: 5rem auto; }
+
+.carousel-item {
+  max-height: 850px; }
+
 /* Header */
 .header {
   grid-area: header;
-  background-image: url(../img/fondo-principal-bajo.png);
+  background-image: url(../../img/fondo-header.png);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%; }
@@ -142,11 +147,6 @@
       .navbar .navbar-collapse .nav-link:hover:before, .navbar .navbar-collapse .nav-link:hover:after {
         opacity: 1;
         transform: translateY(0px); }
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%; }
 
 /* Footer */
 .footer {
@@ -216,14 +216,14 @@
           font-weight: 400;
           font-family: 'Maven Pro', sans-serif;
           margin: 0;
-          font-size: 1rem; }
+          font-size: 1.2rem; }
 
 /* Productos */
 .productosPortada {
-  background-image: url(../img/pine-wood-low.jpg); }
+  background-image: url(../../img/portada-productos.jpg); }
 
 .medidaPortada {
-  background-image: url(../img/measuring.jpg); }
+  background-image: url(../../img/portada-medida.jpg); }
 
 .productos {
   display: grid;
@@ -269,7 +269,7 @@
 
 /* Galeria */
 .portadaGaleria {
-  background-image: url(../img/portada-galeria.jpg); }
+  background-image: url(../../img/portada-galeria.jpg); }
 
 .galeria {
   display: grid;
@@ -355,18 +355,23 @@
 
 /* Nosotros */
 .nosotrosPortada {
-  background-image: url(../img/SN_CIUDAD_blow.jpg); }
+  background-image: url(../../img/portada-nosotros.jpg); }
 
 .conocenos {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
-  margin: 2rem 0; }
-  .conocenos section {
-    width: 30%; }
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  width: 90vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px; }
+  .conocenos .nosotrosDescripcion section {
+    padding: 0 4rem; }
+  .conocenos .nosotrosDescripcion,
+  .conocenos .nosotrosPrincipal {
+    width: 50%; }
   .conocenos h3 {
-    font-weight: 600;
+    font-weight: bold;
     font-family: 'Raleway', sans-serif;
     font-size: 1.8rem; }
   .conocenos h3 span {
@@ -376,71 +381,11 @@
     font-weight: 400;
     font-family: 'Maven Pro', sans-serif;
     margin: 0;
-    font-size: 1rem; }
-  .conocenos img {
-    width: 50%;
-    border-radius: .3rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; }
-
-.divisor {
-  height: 20px;
-  position: relative;
-  width: 100%;
-  margin: 4rem 0;
-  background: radial-gradient(ellipse farthest-side at top center, rgba(0, 0, 0, 0.08), transparent); }
-
-.div-transparente {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0;
-  left: 0;
-  height: 3px;
-  background: linear-gradient(left, transparent, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.02), transparent); }
-
-.historia {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: .5rem;
-  margin: 0 1rem 2rem; }
-  .historia .imgHistoria {
-    width: 100%;
-    height: 450px;
-    border-radius: .25rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; }
-    .historia .imgHistoria h3 {
-      font-family: 'Open sans', sans-serif;
-      font-size: 1.5rem;
+    font-size: 1.2rem; }
+    .conocenos p span {
       font-weight: bold; }
-    .historia .imgHistoria p {
-      text-align: justify;
-      font-family: 'Maven Pro', sans-serif;
-      font-size: 1rem;
-      text-transform: uppercase; }
-    .historia .imgHistoria p,
-    .historia .imgHistoria h3 {
-      margin: .5rem 1rem; }
-  .historia .img1 {
-    background-image: url(../img/comienzo.jpg);
-    background-position: 50%;
-    background-size: cover; }
-  .historia .img2 {
-    background-image: url(../img/avance.jpg);
-    background-position: 50%;
-    background-size: cover; }
-  .historia .img3 {
-    background-image: url(../img/mejoras.jpg);
-    background-position: 50%;
-    background-size: cover; }
-  .historia .img4 {
-    background-image: url(../img/actual.jpg);
-    background-position: 90%;
-    background-size: cover; }
+  .conocenos .nosotrosPrincipal {
+    filter: grayscale(1); }
 
 /* Contacto */
 .contenedorGeneral {
@@ -476,7 +421,7 @@
     width: 100%; }
     .contenedorGeneral .formulario input[type=text],
     .contenedorGeneral .formulario input[type=email],
-    .contenedorGeneral .formulario form textarea {
+    .contenedorGeneral .formulario textarea {
       padding-bottom: .5rem;
       outline: none;
       border-bottom: solid 2px #ccc;
@@ -488,7 +433,7 @@
       width: 50%; }
     .contenedorGeneral .formulario input[type=text]:focus,
     .contenedorGeneral .formulario input[type=email]:focus,
-    .contenedorGeneral .formulario form textarea:focus {
+    .contenedorGeneral .formulario textarea:focus {
       transition: 2s;
       border-bottom: solid 2px #151D1B; }
     .contenedorGeneral .formulario .apellido,
@@ -516,7 +461,15 @@
       .contenedorInicio .main .acaInicio .nosotrosInicio p {
         margin-bottom: 1rem; }
     .contenedorInicio .main .acaInicio .imagenPrincipal {
-      width: 100%; } }
+      width: 100%; }
+  .conocenos {
+    flex-direction: column;
+    width: 70vw; }
+    .conocenos .nosotrosPrincipal,
+    .conocenos .nosotrosDescripcion {
+      width: 100%; }
+    .conocenos .nosotrosDescripcion section {
+      padding: 1rem; } }
 
 @media (max-width: 1240px) {
   /* Productos */
@@ -536,6 +489,8 @@
     width: 80vw;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr); }
+    .galeria .imagenGaleria {
+      filter: grayscale(0); }
     .galeria .imagen4 {
       grid-column-start: 1;
       grid-column-end: 3;
@@ -574,13 +529,6 @@
     .galeria .imagen11,
     .galeria .imagen12 {
       display: none; } }
-
-@media (max-width: 1070px) {
-  .conocenos {
-    flex-direction: column-reverse; }
-    .conocenos section,
-    .conocenos img {
-      width: 80%; } }
 
 @media (max-width: 1050px) {
   /* header */
@@ -629,11 +577,7 @@
   .galeria {
     width: 90vw;
     margin: 1rem auto;
-    gap: 1rem; }
-  /* Nosotros */
-  .historia {
-    grid-template-columns: 1fr 1fr; }
-  /* Contacto */ }
+    gap: 1rem; } }
 
 @media (max-width: 600px) {
   /* Header */
@@ -652,17 +596,23 @@
       flex-direction: column; }
   /* Banners */
   .banner {
-    padding: 2rem 0; }
+    padding: 4rem 0; }
     .banner p {
       font-size: .7rem; }
     .banner h2 {
       font-size: 3rem; }
   /* Nosotros */
-  .conocenos section,
-  .conocenos img {
-    width: 95%; }
-  .historia {
-    grid-template-columns: 1fr; } }
+  .conocenos {
+    width: 90vw; }
+    .conocenos .nosotrosDescripcion h3 {
+      font-size: 1.3rem; }
+    .conocenos .nosotrosDescripcion p {
+      font-size: 1rem; }
+  /* Inicio */
+  .contenedorInicio .main .acaInicio .nosotrosInicio h3 {
+    font-size: 1.3rem; }
+  .contenedorInicio .main .acaInicio .nosotrosInicio p {
+    font-size: 1rem; } }
 
 @media (max-width: 500px) {
   .footer .contenedorFooter .seccionContacto h4,

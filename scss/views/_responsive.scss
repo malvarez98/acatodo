@@ -33,6 +33,26 @@
         }
     }
 
+    // Nosotros
+    .conocenos {
+        flex-direction: column;
+        // margin: 0;
+        width: 70vw;
+
+        // box-shadow:none;
+        .nosotrosPrincipal,
+        .nosotrosDescripcion {
+            // height: 50%;
+            width: 100%;
+        }
+
+        .nosotrosDescripcion {
+            section {
+                padding: 1rem;
+            }
+        }
+    }
+
 }
 
 @media (max-width: 1240px) {
@@ -62,6 +82,10 @@
         width: 80vw;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(8, 1fr);
+
+        .imagenGaleria {
+            filter: grayscale(0);
+        }
 
         .imagen4 {
             grid-column-start: 1;
@@ -123,12 +147,8 @@
 
 @media(max-width: 1070px) {
     .conocenos {
-        flex-direction: column-reverse;
-
-        section,
-        img {
-            width: 80%;
-        }
+        // flex-direction: column;
+        // gap: 2rem;
     }
 }
 
@@ -223,15 +243,6 @@
         gap: 1rem;
     }
 
-    /* Nosotros */
-    .historia {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* Contacto */
-
-
-
 }
 
 @media (max-width: 600px) {
@@ -258,14 +269,15 @@
     /* Contacto */
     .contenedorGeneral {
         padding: 1rem 0;
-        .contacto{
+
+        .contacto {
             flex-direction: column;
         }
     }
 
     /* Banners */
     .banner {
-        padding: 2rem 0;
+        padding: 4rem 0;
 
         p {
             font-size: .7rem;
@@ -278,22 +290,42 @@
 
     /* Nosotros */
     .conocenos {
+        width: 90vw;
+        .nosotrosDescripcion {
+            h3 {
+                font-size: 1.3rem;
+            }
 
-        section,
-        img {
-            width: 95%;
+            p {
+                font-size: 1rem;
+            }
         }
-    }
 
-    .historia {
-        grid-template-columns: 1fr;
     }
-
+    /* Inicio */
+    .contenedorInicio{
+        .main{
+            .acaInicio{
+                .nosotrosInicio{
+                    h3 {
+                        font-size: 1.3rem;
+                    }
+        
+                    p {
+                        font-size: 1rem;
+                    }
+                }
+            }
+            
+        }
+    }  
+    
 }
 
 @media (max-width: 500px) {
     .footer {
         .contenedorFooter {
+
             .seccionContacto,
             .seccionLinks,
             .seccionRedes {
@@ -304,7 +336,8 @@
         }
     }
 }
-@media (max-width: 350px){
+
+@media (max-width: 350px) {
     .footer {
         .contenedorFooter {
             .seccionLogo {
