@@ -17,8 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  padding: 11rem 0; }
+  height: 80%; }
   .banner p {
     color: #BEA88E;
     font-size: 1rem;
@@ -31,8 +30,7 @@
     margin: 0; }
   .banner p, .banner h2 {
     font-weight: bold;
-    text-align: center;
-    text-shadow: 1px 2px 8px black; }
+    text-align: center; }
 
 .footer .contenedorFooter .seccionLinks, .footer .contenedorFooter .seccionRedes, .footer .contenedorFooter .seccionContacto {
   display: flex;
@@ -162,15 +160,15 @@
       align-items: center;
       width: 20%; }
       .footer .contenedorFooter .seccionLogo .logoFooter {
-        width: 210px; }
+        width: 100px;
+        cursor: pointer; }
       .footer .contenedorFooter .seccionLogo p {
         color: #C4C4C4;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
         margin: 0;
         text-align: left;
-        line-height: normal;
-        width: 210px; }
+        line-height: normal; }
         .footer .contenedorFooter .seccionLogo p span {
           font-weight: bold; }
   .footer .seccionCopyright {
@@ -216,6 +214,9 @@
           font-size: 1.2rem; }
 
 /* Productos */
+#bannerProductos {
+  background-image: url("../../img/fondo-test-productos2-ob.jpg"); }
+
 .productosPortada {
   background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-productos_ekcvq4.jpg"); }
 
@@ -231,7 +232,7 @@
   width: 60vw;
   margin: 2rem auto; }
   .productos .producto {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 5px;
     height: 32rem;
     width: 20rem;

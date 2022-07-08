@@ -3,11 +3,6 @@
     .contenedorFooter {
         min-height: 45vh;
         background-color: #151D1B;
-        // display: grid;
-        // grid-template-columns: 30% 15% 15% 15%;
-        // align-items: center;
-        // justify-items: center;
-        // justify-content: center;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -20,8 +15,8 @@
             width: 20%;
             
             .logoFooter {
-                width: 210px;
-                // margin-bottom: 1rem;
+                width: 100px;
+                cursor: pointer;
             }
 
             p {
@@ -31,8 +26,7 @@
                 margin: 0;
                 text-align: left;
                 line-height: normal;
-                width: 210px;
-                // width: 100%;
+                // width: 210px;
                 span {
                     font-weight: bold;
                 }

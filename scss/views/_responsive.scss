@@ -1,5 +1,4 @@
 @media (max-width: 1660px) {
-
     // productos
     .productos {
         width: 80vw;
@@ -36,13 +35,9 @@
     // Nosotros
     .conocenos {
         flex-direction: column;
-        // margin: 0;
         width: 70vw;
-
-        // box-shadow:none;
         .nosotrosPrincipal,
         .nosotrosDescripcion {
-            // height: 50%;
             width: 100%;
         }
 
@@ -147,8 +142,7 @@
 
 @media(max-width: 1070px) {
     .conocenos {
-        // flex-direction: column;
-        // gap: 2rem;
+        //
     }
 }
 

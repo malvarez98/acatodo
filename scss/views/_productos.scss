@@ -1,7 +1,9 @@
 .banner {
     @extend %banner;
 }
-
+#bannerProductos{
+    background-image: url('../../img/fondo-test-productos2-ob.jpg');
+}
 .productosPortada {
     background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-productos_ekcvq4.jpg');
 
@@ -21,7 +23,7 @@
     margin: 2rem auto;
 
     .producto {
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
         border-radius: 5px;
         height: 32rem;
         width: 20rem;
