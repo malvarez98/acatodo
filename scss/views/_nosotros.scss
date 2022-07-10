@@ -2,8 +2,36 @@
     @extend %banner;
 }
 
+#bannerNosotros {
+    background-image: url('../../img/fondo-test-nosotros-ob.jpg');
+}
+
 .nosotrosPortada {
-    background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-nosotros_vyvo2j.jpg')
+    // background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-nosotros_vyvo2j.jpg');
+}
+
+.carousel {
+    .carousel-inner {
+        .carousel-item {
+            .img {
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center center;
+                height: 650px;
+            }
+
+            .carousel1 {
+                background-image: url('../../img/carousel1.jpg');
+            }
+            .carousel2{
+                background-image: url('../../img/carousel2.jpg');
+            }
+            .carousel3{
+                background-image: url('../../img/carousel3.jpg');
+            }
+        }
+
+    }
 }
 
 .conocenos {

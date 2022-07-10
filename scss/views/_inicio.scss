@@ -7,17 +7,14 @@
         "main main main"
         "footer footer footer";
     width: auto;
-
     .main {
-        grid-area: main;
-        padding: 1rem;
-
+        grid-area: main;        
         .acaInicio {
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-around;
-
+            margin: 7rem 0 4rem;
             .nosotrosInicio {
                 padding: 0 1rem;
                 width: 40%;

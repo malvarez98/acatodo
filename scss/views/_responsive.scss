@@ -1,20 +1,30 @@
 @media (max-width: 1660px) {
-    // productos
+
+    // Productos
     .productos {
         width: 80vw;
+    }
+
+    // Contactos
+    .contenedorGeneral {
+
+        .seccionFormulario,
+        .horariosUbicacion {
+            width: 60vw;
+        }
     }
 }
 
 @media (max-width: 1361px) {
 
-    /* Inicio */
+    // Inicio
     .contenedorInicio {
         .main {
             .acaInicio {
                 flex-direction: column;
                 align-items: center;
                 width: 70vw;
-                margin: 1rem auto;
+                margin: 2rem auto;
 
                 .nosotrosInicio {
                     width: 100%;
@@ -36,6 +46,7 @@
     .conocenos {
         flex-direction: column;
         width: 70vw;
+
         .nosotrosPrincipal,
         .nosotrosDescripcion {
             width: 100%;
@@ -48,20 +59,29 @@
         }
     }
 
+    // Contacto
+    .contenedorGeneral {
+
+        .seccionFormulario,
+        .horariosUbicacion {
+            width: 70vw;
+        }
+    }
+
 }
 
 @media (max-width: 1240px) {
 
-    /* Productos */
+    // Productos
     .productos {
         grid-template-columns: 1fr 1fr;
         width: 90vw;
         row-gap: 1rem;
     }
 
-    /* Banners */
+    // Banners
     .banner {
-        padding: 10rem 0;
+        // padding: 10rem 0;
 
         p {
             font-size: 1rem;
@@ -72,7 +92,7 @@
         }
     }
 
-    /* galeria */
+    // Galeria
     .galeria {
         width: 80vw;
         grid-template-columns: repeat(4, 1fr);
@@ -138,22 +158,20 @@
 
     }
 
-}
+    // Contacto
+    .contenedorGeneral {
 
-@media(max-width: 1070px) {
-    .conocenos {
-        //
+        .seccionFormulario,
+        .horariosUbicacion {
+            width: 80vw;
+        }
     }
+
 }
 
 @media (max-width: 1050px) {
 
-    /* header */
-    .header {
-        background-position: 50%;
-    }
-
-    /* Inicio */
+    // Inicio
     .contenedorInicio {
         .main {
             .acaInicio {
@@ -162,37 +180,43 @@
         }
     }
 
-    /* Banners */
-    .banner {
-        padding: 7rem 0;
+    // Contacto
+    .contenedorGeneral {
+
+        .seccionFormulario,
+        .horariosUbicacion {
+            width: 90vw;
+        }
     }
 
-    /* contacto */
-    .contenedorGeneral {
-        grid-template-columns: 1fr;
-        padding: 1rem 0;
+}
 
-        .contacto {
-            flex-direction: row;
-            width: 100%;
+@media (max-width: 991px) {
+
+    // Header
+    .header {
+        height: 500px;
+
+        .navbar {
+            .container-fluid {
+                .navbar-collapse {
+                    .logoHeader {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 850px) {
+
+    // Footer
     .footer {
         .contenedorFooter {
 
             .seccionLogo {
-                width: 25%;
-
-                .logoFooter {
-                    width: 100%;
-                }
-
-                p {
-                    width: 100%;
-                }
+                width: 30%;
             }
         }
     }
@@ -200,7 +224,7 @@
 
 @media (max-width: 780px) {
 
-    /* Footer */
+    // Footer
     .footer {
         .contenedorFooter {
             flex-direction: column;
@@ -214,7 +238,7 @@
         }
     }
 
-    /* Inicio */
+    // Inicio
     .contenedorInicio {
         .main {
             .acaInicio {
@@ -223,30 +247,34 @@
         }
     }
 
-    /* Productos */
+    // Productos
     .productos {
         grid-template-columns: 1fr;
         width: 100vw;
         gap: 1rem;
     }
 
-    /* Galeria */
+    // Galeria
     .galeria {
         width: 90vw;
         margin: 1rem auto;
         gap: 1rem;
+    }
+    // Contacto
+    .contenedorGeneral{
+        .contactoTitulos{
+            width: 100vw;
+        }
+        .horariosUbicacion{
+            flex-direction: column;
+        }
     }
 
 }
 
 @media (max-width: 600px) {
 
-    /* Header */
-    .header {
-        background-position: 50%;
-    }
-
-    /* Footer */
+    // Footer
     .footer {
         .contenedorFooter {
             .seccionLogo {
@@ -255,24 +283,22 @@
         }
     }
 
-    /* Galeria */
+    // Galeria
     .galeria {
         gap: .5rem;
     }
 
-    /* Contacto */
+    // Contacto
     .contenedorGeneral {
-        padding: 1rem 0;
 
-        .contacto {
-            flex-direction: column;
+        .seccionFormulario,
+        .horariosUbicacion {
+            // width: 60vw;
         }
     }
 
-    /* Banners */
+    // Banners
     .banner {
-        padding: 4rem 0;
-
         p {
             font-size: .7rem;
         }
@@ -282,9 +308,10 @@
         }
     }
 
-    /* Nosotros */
+    // Nosotros
     .conocenos {
         width: 90vw;
+
         .nosotrosDescripcion {
             h3 {
                 font-size: 1.3rem;
@@ -296,29 +323,34 @@
         }
 
     }
-    /* Inicio */
-    .contenedorInicio{
-        .main{
-            .acaInicio{
-                .nosotrosInicio{
+
+    // Inicio
+    .contenedorInicio {
+        .main {
+            .acaInicio {
+                .nosotrosInicio {
                     h3 {
                         font-size: 1.3rem;
                     }
-        
+
                     p {
                         font-size: 1rem;
                     }
                 }
             }
-            
+
         }
-    }  
-    
+    }
+
 }
 
 @media (max-width: 500px) {
+    // Footer
     .footer {
         .contenedorFooter {
+            .seccionLogo {
+                width: 50%;
+            }
 
             .seccionContacto,
             .seccionLinks,
@@ -329,13 +361,22 @@
             }
         }
     }
+    // Contacto
+    .contenedorGeneral{
+        .horariosUbicacion{
+            .mapa{
+                width: 90%;
+            }
+        }
+    }
 }
 
 @media (max-width: 350px) {
+    // Footer
     .footer {
         .contenedorFooter {
             .seccionLogo {
-                width: 45%;
+                width: 60%;
             }
         }
     }

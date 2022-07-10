@@ -5,12 +5,14 @@
     background-image: url('../../img/fondo-test-productos2-ob.jpg');
 }
 .productosPortada {
-    background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-productos_ekcvq4.jpg');
-
+    // background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-productos_ekcvq4.jpg');
 }
 
 .medidaPortada {
-    background-image: url('https://res.cloudinary.com/dtpfo51rx/image/upload/v1656862701/portada-medida_rlycko.jpg');
+    background-image: url('../../img/fondo-test-medida.jpg');
+    background-position: center;
+    background-position-y: 65%;
+    height: 550px;
 }
 
 .productos {
