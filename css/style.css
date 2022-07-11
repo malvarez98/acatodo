@@ -89,7 +89,7 @@
 /* Header */
 .header {
   grid-area: header;
-  background-image: url("../../img/fondo-test-ob.jpg");
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546764/banner-inicio_xcuub0.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -214,10 +214,10 @@
 
 /* Productos */
 #bannerProductos {
-  background-image: url("../../img/fondo-test-productos2-ob.jpg"); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546761/banner-productos_v3d6lq.jpg"); }
 
 .medidaPortada {
-  background-image: url("../../img/fondo-test-medida.jpg");
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546760/banner-medida_gjkvuj.jpg");
   background-position: center;
   background-position-y: 65%;
   height: 550px; }
@@ -266,7 +266,7 @@
 
 /* Galeria */
 #bannerGaleria {
-  background-image: url("../../img/fondo-test-galeria.jpg"); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546762/banner-galeria_zfd245.jpg"); }
 
 .galeria {
   display: grid;
@@ -352,7 +352,7 @@
 
 /* Nosotros */
 #bannerNosotros {
-  background-image: url("../../img/fondo-test-nosotros-ob.jpg"); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546762/banner-nosotros_xfen69.jpg"); }
 
 .carousel .carousel-inner .carousel-item .img {
   background-size: cover;
