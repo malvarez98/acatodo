@@ -145,6 +145,9 @@
       .navbar .container-fluid .navbar-collapse .nav-link:hover:before, .navbar .container-fluid .navbar-collapse .nav-link:hover:after {
         opacity: 1;
         transform: translateY(0px); }
+    .navbar .container-fluid .navbar-collapse .cmActive:before, .navbar .container-fluid .navbar-collapse .cmActive:after {
+      opacity: 1;
+      transform: translateY(0px); }
 
 /* Footer */
 .footer {

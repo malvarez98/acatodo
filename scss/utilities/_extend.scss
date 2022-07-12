@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
     // height: 80%;
     p {
         color: #BEA88E;
@@ -23,14 +24,15 @@
     h2 {
         font-weight: bold;
         text-align: center;
-        // text-shadow: 1px 2px 8px black;
     }
 }
+
 // Footer links list
-%footerList{
+%footerList {
     display: flex;
     flex-direction: column;
     gap: 10px;
+
     h4 {
         font-family: 'Raleway', sans-serif;
         font-size: 1.5rem;
@@ -38,6 +40,7 @@
         color: #F9FAFA;
         margin: 0;
     }
+
     ul {
         margin: 0;
         padding: 0;
@@ -54,16 +57,20 @@
             font-size: 14px;
             color: #C4C4C4;
             cursor: pointer;
+
             &:hover {
                 color: white;
             }
-            a{
+
+            a {
                 text-decoration: none;
                 color: #C4C4C4;
+
                 &:hover {
                     color: white;
                 }
             }
+
             i {
                 color: #BEA88E;
                 font-size: 1rem;
