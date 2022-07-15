@@ -73,7 +73,6 @@
 @media (max-width: 1240px) {
 
     // Inicio
-   
     .contenedorInicio{
         .seccionDestacados{
             padding: 1rem;
@@ -347,6 +346,15 @@
                 }
             }
 
+        }
+        .seccionDestacados{
+            margin: 0;
+            .destacados{
+                .cardDes{
+                    overflow: hidden;
+                    width: 325px;
+                }
+            }
         }
     }
 
