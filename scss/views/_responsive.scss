@@ -72,6 +72,19 @@
 
 @media (max-width: 1240px) {
 
+    // Inicio
+   
+    .contenedorInicio{
+        .seccionDestacados{
+            padding: 1rem;
+            height: auto;
+            .destacados{
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+        }
+    }
+
     // Productos
     .productos {
         grid-template-columns: 1fr 1fr;
