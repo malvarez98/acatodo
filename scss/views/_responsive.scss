@@ -325,6 +325,10 @@
     }
 
     // Banners
+    .header {
+        background-position: unset;
+    }
+
     .banner {
         p {
             font-size: .7rem;
@@ -386,6 +390,18 @@
                     overflow: hidden;
                     width: 325px;
                 }
+            }
+        }
+    }
+
+    // Contacto
+    .contenedorGeneral {
+        .contactoTitulos {
+
+            h3,
+            p {
+                width: 90vw;
+                margin: 0 auto; 
             }
         }
     }

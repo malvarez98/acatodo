@@ -10,11 +10,15 @@
     cursor: pointer;
 
     &:hover {
-        background-color: #BEA88E;
+        background-color: lighten($color: #151D1B, $amount: 20);
         transition: .5s;
     }
 }
 
 .comprar {
-    background-color: #28a745;
+    background-color: #98ab42;
+    &:hover {
+        background-color: lighten($color: #98ab42, $amount: 10);
+        transition: .5s;
+    }
 }
