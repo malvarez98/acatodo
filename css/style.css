@@ -226,7 +226,7 @@
   .contenedorInicio .seccionDestacados {
     grid-area: destacados;
     height: 650px;
-    background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657715490/destacados-test-2_ifepsc.jpg");
+    background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1658018338/destacados-test-2_ifepsc_ozltdc.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -328,7 +328,7 @@
 
 /* Galeria */
 #bannerGaleria {
-  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546762/banner-galeria_zfd245.jpg"); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1658018338/banner-galeria_zfd245_x6a9c4.jpg"); }
 
 .galeria {
   display: grid;
@@ -414,7 +414,7 @@
 
 /* Nosotros */
 #bannerNosotros {
-  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1657546762/banner-nosotros_xfen69.jpg"); }
+  background-image: url("https://res.cloudinary.com/dtpfo51rx/image/upload/v1658018339/banner-nosotros_xfen69_afpqht.jpg"); }
 
 .carousel .carousel-inner .carousel-item .img {
   background-size: cover;
