@@ -22,12 +22,12 @@
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     margin: 0; }
-  .banner h1 {
+  .banner h1, .banner h2 {
     color: white;
     font-size: 4rem;
     font-family: 'Raleway', sans-serif;
     margin: 0; }
-  .banner p, .banner h1 {
+  .banner p, .banner h1, .banner h2 {
     font-weight: bold;
     text-align: center; }
 
@@ -587,7 +587,8 @@
     row-gap: 1rem; }
   .banner p {
     font-size: 1rem; }
-  .banner h1 {
+  .banner h1,
+  .banner h2 {
     font-size: 3.5rem; }
   .galeria {
     width: 80vw;
@@ -693,7 +694,8 @@
     background-position: unset; }
   .banner p {
     font-size: .7rem; }
-  .banner h1 {
+  .banner h1,
+  .banner h2 {
     font-size: 3rem; }
   .conocenos {
     width: 90vw; }
