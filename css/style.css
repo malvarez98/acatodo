@@ -22,12 +22,12 @@
     font-size: 1rem;
     font-family: 'Raleway', sans-serif;
     margin: 0; }
-  .banner h2 {
+  .banner h1 {
     color: white;
     font-size: 4rem;
     font-family: 'Raleway', sans-serif;
     margin: 0; }
-  .banner p, .banner h2 {
+  .banner p, .banner h1 {
     font-weight: bold;
     text-align: center; }
 
@@ -212,7 +212,7 @@
       .contenedorInicio .main .acaInicio .nosotrosInicio {
         padding: 0 1rem;
         width: 40%; }
-        .contenedorInicio .main .acaInicio .nosotrosInicio h3 {
+        .contenedorInicio .main .acaInicio .nosotrosInicio h1 {
           margin-bottom: .5rem;
           font-weight: bold;
           font-family: 'Raleway', sans-serif;
@@ -587,7 +587,7 @@
     row-gap: 1rem; }
   .banner p {
     font-size: 1rem; }
-  .banner h2 {
+  .banner h1 {
     font-size: 3.5rem; }
   .galeria {
     width: 80vw;
@@ -693,7 +693,7 @@
     background-position: unset; }
   .banner p {
     font-size: .7rem; }
-  .banner h2 {
+  .banner h1 {
     font-size: 3rem; }
   .conocenos {
     width: 90vw; }
@@ -703,7 +703,7 @@
       font-size: 1rem; }
   .carousel .carousel-inner .carousel-item .img {
     height: 350px; }
-  .contenedorInicio .main .acaInicio .nosotrosInicio h3 {
+  .contenedorInicio .main .acaInicio .nosotrosInicio h1 {
     font-size: 1.3rem; }
   .contenedorInicio .main .acaInicio .nosotrosInicio p {
     font-size: 1rem; }
